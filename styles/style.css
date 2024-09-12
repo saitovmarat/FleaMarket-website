@@ -1,19 +1,18 @@
 .header {
-  font-size: 18px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 92px 25px 96px 25px;
+  margin: 94px 25px; /* Подобрал сам */
+  font-size: 18px;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
   flex-direction: row;
-  list-style: circle;
+  justify-content: space-between;
+  gap: 32px; 
 
   padding: 44px 34px 39px 27.52px;
+  list-style: circle;
 }
 
 .header__links-list-item {
@@ -28,17 +27,83 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__logo-image {
   width: 150px;
   height: 105px;
 }
 
-.header__logo-image {
-  width: 129.11px;
-  height: 104.65px;
-}
-
 .header__address {
-  padding: 5px 26px 2px 183px;
+  padding: 5px 26px 2px 189px;
   line-height: 24.3px;
 }
 
+.cover {
+  height: 757px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  padding: 160px 50px 120px; /* Подобрал сам */
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.26;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.text-right {
+  align-self: flex-end;
+}
+
+.default_spacing {
+  letter-spacing: 0.3em;
+}
+
+.extended_spacing {
+  letter-spacing: 0.6em;
+}
+
+.cover__main {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 22px;
+}
+
+.cover__main-text{
+  padding: 12px 79px 62px; 
+  line-height: 28px;
+  
+  word-spacing: 0.8em;
+}
+
+.cover__main-button {
+  width: 256px;
+  height: 51px;
+  border: solid white 1px;
+  padding-top: 10px; /* Подобрал сам */
+}
+
+.cover__main-button_text {
+  padding: 10px 30px;
+  line-height: auto;
+  word-spacing: 0;
+}
+
+.ninety_spacing {
+  word-spacing: 0.9em;
+}
+
+.hundred-ten_spacing {
+  word-spacing: 1.1em;
+}
